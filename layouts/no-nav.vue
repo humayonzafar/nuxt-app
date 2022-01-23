@@ -3,7 +3,7 @@
     <div class="container">
       <NuxtLink to="/">Go Back</NuxtLink>
     </div>
-    <Nuxt/>
+    <Nuxt />
   </div>
 </template>
 

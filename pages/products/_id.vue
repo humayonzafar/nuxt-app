@@ -1,31 +1,45 @@
 <template>
   <div v-if="product" class="container py-5">
     <div class="hero-container">
-      <img :src="require(`@/assets/images/${product.image}`)" alt="" class="image">
+      <img
+        :src="require(`@/assets/images/${product.image}`)"
+        alt=""
+        class="image"
+      />
       <div class="info-box">
         <h1>{{ product.title }}</h1>
         <p class="snippet">{{ product.snippet }}</p>
-        <RentModal
-          :product="product"
-        />
+        <RentModal :product="product" />
       </div>
     </div>
     <div class="whats-included-container">
       <div class="included-container">
         <h6>Super Effective</h6>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, dolorem.</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
+          dolorem.
+        </p>
       </div>
       <div class="included-container">
         <h6>Clean & Tidy</h6>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, dolorem.</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
+          dolorem.
+        </p>
       </div>
       <div class="included-container">
         <h6>Cancel Anytime</h6>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, dolorem.</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
+          dolorem.
+        </p>
       </div>
       <div class="included-container">
         <h6>Satisfaction Guaranteed</h6>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, dolorem.</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
+          dolorem.
+        </p>
       </div>
     </div>
     <div class="description-container">
@@ -44,9 +58,9 @@
 export default {
   computed: {
     product() {
-      return this.$store.getters.getProductById(this.$route.params.id);
-    }
-  }
+      return this.$store.getters.getProductById(this.$route.params.id)
+    },
+  },
 }
 </script>
 
@@ -92,7 +106,7 @@ h6 {
 }
 
 p {
-  color: grey
+  color: grey;
 }
 
 .snippet {
@@ -113,11 +127,10 @@ button {
 
 .description-container {
   margin-top: 3rem;
-  color: grey
+  color: grey;
 }
 
 .padding {
-  padding: 10rem 0
+  padding: 10rem 0;
 }
-
 </style>

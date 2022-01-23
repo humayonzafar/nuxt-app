@@ -1,12 +1,16 @@
 <template>
   <nuxt-link :to="`/products/${card.id}`" class="card-container">
-    <img class="image" :src="require(`@/assets/images/${card.image || 'fe1.jpg'}`)" alt="">
+    <img
+      class="image"
+      :src="require(`@/assets/images/${card.image || 'fe1.jpg'}`)"
+      alt=""
+    />
   </nuxt-link>
 </template>
 
 <script>
 export default {
-  props: ["card"]
+  props: ['card'],
 }
 </script>
 
@@ -22,6 +26,6 @@ export default {
 
 .image {
   width: 100%;
-  height: 100%
+  height: 100%;
 }
 </style>

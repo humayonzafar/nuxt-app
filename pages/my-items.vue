@@ -1,28 +1,22 @@
 <template>
   <div class="container">
-    <my-items
-      v-for="rental in myRentals"
-      :key="rental.id"
-      :item="rental"
-    />
+    <my-items v-for="rental in myRentals" :key="rental.id" :item="rental" />
   </div>
 </template>
 
 <script>
-import {mapState} from 'vuex';
+import { mapState } from 'vuex'
 
 export default {
-  layout: "no-nav",
+  layout: 'no-nav',
   computed: {
-    ...mapState([
-      'myRentals'
-    ])
-  }
+    ...mapState(['myRentals']),
+  },
 }
 </script>
 
 <style scoped>
 .container {
-  padding: 5rem 0
+  padding: 5rem 0;
 }
 </style>

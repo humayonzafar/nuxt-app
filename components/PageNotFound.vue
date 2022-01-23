@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Page Not Found</h1>
-    <img :src="require('@/assets/images/fe25.jpg')" alt="">
+    <img :src="require('@/assets/images/fe25.jpg')" alt="" />
   </div>
 </template>
 
@@ -14,7 +14,7 @@ div {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50rem
+  width: 50rem;
 }
 
 h1 {
@@ -23,6 +23,6 @@ h1 {
 
 img {
   width: 15rem;
-  margin: 0 auto
+  margin: 0 auto;
 }
 </style>

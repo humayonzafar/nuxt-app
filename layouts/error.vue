@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <PageNotFound/>
+    <PageNotFound />
   </div>
 </template>
 
@@ -16,5 +16,4 @@ export default {}
   justify-content: center;
   height: 70vh;
 }
-
 </style>

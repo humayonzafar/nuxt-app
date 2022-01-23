@@ -5,28 +5,33 @@
     <b-modal ref="my-modal" hide-footer title="Using Component Methods">
       <div class="calendar-container">
         <div class="text-container">
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores quis soluta quia neque! Ea modi, a
-            omnis eligendi enim ducimus asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
-            autem?</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores
+            quis soluta quia neque! Ea modi, a omnis eligendi enim ducimus
+            asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Laborum, autem?
+          </p>
         </div>
-        <vc-date-picker
-          :value="null"
-          color="indigo"
-          is-dark
-          is-range
-        />
+        <vc-date-picker :value="null" color="indigo" is-dark is-range />
       </div>
-      <b-button class="mt-3" variant="outline-danger" block @click="() => {
-        addItem(product.id)
-        hideModal()
-      }">Order
+      <b-button
+        class="mt-3"
+        variant="outline-danger"
+        block
+        @click="
+          () => {
+            addItem(product.id)
+            hideModal()
+          }
+        "
+        >Order
       </b-button>
     </b-modal>
   </div>
 </template>
 
 <script>
-import {mapMutations} from "vuex"
+import { mapMutations } from 'vuex'
 
 export default {
   props: ['product'],
@@ -41,10 +46,9 @@ export default {
       this.$refs['my-modal'].toggle('#toggle-btn')
     },
     ...mapMutations(['addItem']),
-  }
+  },
 }
 </script>
-
 
 <style scoped>
 button {
@@ -68,11 +72,10 @@ button {
 }
 
 p {
-  color: grey
+  color: grey;
 }
 
 .text-container {
-  padding: 0.5rem
+  padding: 0.5rem;
 }
 </style>
-

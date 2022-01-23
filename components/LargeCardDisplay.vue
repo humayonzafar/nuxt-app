@@ -18,7 +18,7 @@
 
 <script>
 export default {
-  props: ['cardsSection']
+  props: ['cardsSection'],
 }
 </script>
 

@@ -1,6 +1,10 @@
 <template>
   <div class="card">
-    <img class="image" :src="require(`@/assets/images/${card.image || 'fe1.jpg'}`)" alt="">
+    <img
+      class="image"
+      :src="require(`@/assets/images/${card.image || 'fe1.jpg'}`)"
+      alt=""
+    />
     <h3 class="header">{{ card.title }}</h3>
     <p class="snippet">
       {{ card.snippet }}
@@ -35,6 +39,6 @@ export default {
 }
 
 .snippet {
-  color: grey
+  color: grey;
 }
 </style>

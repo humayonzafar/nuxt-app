@@ -13,14 +13,13 @@
 
 <script>
 export default {
-  props: ["cardsSection"]
+  props: ['cardsSection'],
 }
 </script>
 
 <style scoped>
-
 .container {
-  padding: 2rem 0
+  padding: 2rem 0;
 }
 
 .header {

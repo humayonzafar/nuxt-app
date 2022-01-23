@@ -1,11 +1,14 @@
 <template>
   <div class="review-card">
     <div class="image-container">
-      <img :src="review.picture.large" alt="">
+      <img :src="review.picture.large" alt="" />
     </div>
     <div class="text-container">
       <h6>{{ review.login.username }}</h6>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus quam magni beatae possimus debitis.</p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus
+        quam magni beatae possimus debitis.
+      </p>
     </div>
   </div>
 </template>
@@ -24,7 +27,7 @@ export default {
 }
 
 .text-container {
-  margin-left: 2rem
+  margin-left: 2rem;
 }
 
 img {
@@ -34,6 +37,6 @@ img {
 }
 
 p {
-  color: grey
+  color: grey;
 }
 </style>

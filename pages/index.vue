@@ -15,20 +15,18 @@
 </template>
 
 <script>
-import { largeCardSections, smallCardSections } from "@/assets/data.js"
-import LargeCardDisplay from "@/components/LargeCardDisplay";
-import SmallCardDisplay from "@/components/SmallCardDisplay";
+import { largeCardSections, smallCardSections } from '@/assets/data.js'
+import LargeCardDisplay from '@/components/LargeCardDisplay'
+import SmallCardDisplay from '@/components/SmallCardDisplay'
 export default {
-  components: {SmallCardDisplay, LargeCardDisplay},
-  data(){
+  components: { SmallCardDisplay, LargeCardDisplay },
+  data() {
     return {
       largeCardInfo: largeCardSections,
-      smallCardSections: smallCardSections
+      smallCardSections,
     }
-  }
+  },
 }
 </script>
 
-<style>
-
-</style>
+<style></style>

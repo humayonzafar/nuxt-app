@@ -15,15 +15,15 @@
 export default {
   data() {
     return {
-      reviewers: []
+      reviewers: [],
     }
   },
   async fetch() {
-    this.reviewers = await fetch('https://randomuser.me/api/?results=5').then((res) => res.json())
-  }
+    this.reviewers = await fetch('https://randomuser.me/api/?results=5').then(
+      (res) => res.json()
+    )
+  },
 }
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
