@@ -1,9 +1,34 @@
 <template>
-  <Tutorial />
+  <div>
+    <hero />
+    <large-card-display
+      v-for="cardInfo in largeCardInfo"
+      :key="cardInfo.id"
+      :cardsSection="cardInfo"
+    />
+    <small-card-display
+      v-for="cardInfo in smallCardSections"
+      :key="cardInfo.id"
+      :cardsSection="cardInfo"
+    />
+  </div>
 </template>
 
 <script>
+import { largeCardSections, smallCardSections } from "@/assets/data.js"
+import LargeCardDisplay from "@/components/LargeCardDisplay";
+import SmallCardDisplay from "@/components/SmallCardDisplay";
 export default {
-  name: 'IndexPage',
+  components: {SmallCardDisplay, LargeCardDisplay},
+  data(){
+    return {
+      largeCardInfo: largeCardSections,
+      smallCardSections: smallCardSections
+    }
+  }
 }
 </script>
+
+<style>
+
+</style>

@@ -10,6 +10,21 @@ module.exports = {
   },
   extends: ['@nuxtjs', 'plugin:nuxt/recommended', 'prettier'],
   plugins: [],
+  overrides: [
+    {
+      files: ['src/views/**/*.vue'],
+      rules: {
+        'vue/multi-word-component-names': 0,
+      },
+    },
+  ],
   // add your custom rules here
-  rules: {},
+  rules: {
+    "vue/multi-word-component-names": [
+      "error",
+      {
+        "ignores": ["index", "default", "error"]
+      }
+    ]
+  },
 }
