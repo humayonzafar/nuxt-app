@@ -4,12 +4,12 @@
     <large-card-display
       v-for="cardInfo in largeCardInfo"
       :key="cardInfo.id"
-      :cardsSection="cardInfo"
+      :cards-section="cardInfo"
     />
     <small-card-display
       v-for="cardInfo in smallCardSections"
       :key="cardInfo.id"
-      :cardsSection="cardInfo"
+      :cards-section="cardInfo"
     />
   </div>
 </template>
