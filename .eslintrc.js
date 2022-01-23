@@ -23,7 +23,7 @@ module.exports = {
     "vue/multi-word-component-names": [
       "error",
       {
-        "ignores": ["index", "default", "error"]
+        "ignores": ["index", "default", "error", "Nav", "Reviews", "Hero"]
       }
     ]
   },

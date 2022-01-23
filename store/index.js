@@ -182,7 +182,7 @@ export const state = () => ({
 
 export const mutations = {
   addItem(state, id){
-    let item = state.products.find(product => product.id == id)
+    const item = state.products.find(product => product.id == id)
     state.myRentals.push(item)
   },
 }
