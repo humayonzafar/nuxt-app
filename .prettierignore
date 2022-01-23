@@ -92,5 +92,6 @@ sw.*
 # macOS
 .DS_Store
 
+test/App.spec.js
 # Vim swap files
 *.swp
