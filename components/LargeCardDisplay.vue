@@ -21,8 +21,8 @@ export default {
   props: {
     cardsSection: {
       type: Object,
-      default: ()=>{}
-    }
+      default: () => {},
+    },
   },
 }
 </script>

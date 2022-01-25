@@ -13,8 +13,8 @@ export default {
   props: {
     card: {
       type: Object,
-      default: ()=>{}
-    }
+      default: () => {},
+    },
   },
 }
 </script>
