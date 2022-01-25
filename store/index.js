@@ -239,6 +239,6 @@ export const mutations = {
 
 export const getters = {
   getProductById: (state) => (id) => {
-    return state.products.find((product) => product.id === id)
+    return state.products.find((product) => product.id === parseInt(id))
   },
 }

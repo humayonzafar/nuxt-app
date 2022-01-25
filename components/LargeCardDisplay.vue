@@ -18,13 +18,18 @@
 
 <script>
 export default {
-  props: ['cardsSection'],
+  props: {
+    cardsSection: {
+      type: Object,
+      default: ()=>{}
+    }
+  },
 }
 </script>
 
 <style scoped>
 .container {
-  margin-top: 2rem;
+  margin-top: 6rem;
 }
 
 .header {

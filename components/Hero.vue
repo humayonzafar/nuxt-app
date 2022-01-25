@@ -6,7 +6,7 @@
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste iusto
         illum quidem asperiores, cum nisi aperiam eius ipsa sapiente odit!
       </p>
-      <button class="button btn">Start Looking</button>
+      <NuxtLink to="/Products" class="button btn">Start Looking</NuxtLink>
     </div>
     <img
       class="image"

@@ -1,20 +1,27 @@
 <template>
   <div class="card">
-    <img
-      class="image"
-      :src="require(`@/assets/images/${card.image || 'fe1.jpg'}`)"
-      alt=""
-    />
-    <h3 class="header">{{ card.title }}</h3>
-    <p class="snippet">
-      {{ card.snippet }}
-    </p>
+    <nuxt-link :to="`/products/${card.id}`" class="card-container">
+      <img
+        class="image"
+        :src="require(`@/assets/images/${card.image || 'fe1.jpg'}`)"
+        alt=""
+      />
+      <h3 class="header">{{ card.title }}</h3>
+      <p class="snippet">
+        {{ card.snippet }}
+      </p>
+    </nuxt-link>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['card'],
+  props: {
+    card: {
+      type: Object,
+      default: ()=>{}
+    }
+  },
 }
 </script>
 
@@ -29,8 +36,9 @@ export default {
 }
 
 .image {
-  height: 65%;
+  height: 250px;
   border-radius: 0.5rem;
+  max-width: 100%;
 }
 
 .header {

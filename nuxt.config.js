@@ -17,8 +17,17 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
 
+  script: [
+    { src: 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js' },
+    { src: 'https://code.jquery.com/jquery-3.3.1.slim.min.js' },
+    { src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js' }
+  ],
+
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [
+    {src: '~plugins/vue-js-modal.js', mode: 'server'},
+    {src: '~plugins/vue-calendar.js', mode: 'client'},
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -36,5 +45,7 @@ export default {
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    transpile: ['vue-star-rating']
+  }
 }

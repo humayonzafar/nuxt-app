@@ -54,14 +54,12 @@ export default {
 button {
   width: 100%;
   border: none;
-  padding: 0.5rem;
   color: white;
   font-weight: 700;
   padding: 1rem 4rem;
   border-radius: 100rem;
   background-color: rgb(231, 81, 43);
   color: white;
-  font-weight: 700;
   transition: 0.5s;
 }
 

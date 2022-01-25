@@ -10,7 +10,12 @@
 
 <script>
 export default {
-  props: ['card'],
+  props: {
+    card: {
+      type: Object,
+      default: ()=>{}
+    }
+  },
 }
 </script>
 
