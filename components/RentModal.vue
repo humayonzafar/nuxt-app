@@ -6,10 +6,7 @@
       <div class="calendar-container">
         <div class="text-container">
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores
-            quis soluta quia neque! Ea modi, a omnis eligendi enim ducimus
-            asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Laborum, autem?
+            This might mean that you need to have several different extinguishers on your job site. Get the ones you need, and make sure that everyone on the crew understands how to use them and which fire extinguishers are for which types of fire.
           </p>
         </div>
         <vc-date-picker :value="null" color="indigo" is-dark is-range />

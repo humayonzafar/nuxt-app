@@ -5,6 +5,7 @@
       v-for="cardInfo in largeCardInfo"
       :key="cardInfo.id"
       :cards-section="cardInfo"
+      class="mt-12"
     />
     <small-card-display
       v-for="cardInfo in smallCardSections"

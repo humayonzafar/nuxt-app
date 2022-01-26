@@ -16,29 +16,25 @@
       <div class="included-container">
         <h6>Super Effective</h6>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
-          dolorem.
+          A fire extinguisher is an active fire protection device used to extinguish or control small fires, often in emergency situations.
         </p>
       </div>
       <div class="included-container">
         <h6>Clean & Tidy</h6>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
-          dolorem.
+          There are two main types of fire extinguishers: stored-pressure and cartridge-operated. In stored pressure units, the expellant is stored in the same chamber as the firefighting agent itself.
         </p>
       </div>
       <div class="included-container">
         <h6>Cancel Anytime</h6>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
-          dolorem.
+          Cancel your order at anytime.
         </p>
       </div>
       <div class="included-container">
         <h6>Satisfaction Guaranteed</h6>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
-          dolorem.
+          hey have the advantage of simple and prompt recharge, allowing an operator to discharge the extinguisher, recharge it, and return to the fire in a reasonable amount of time.
         </p>
       </div>
     </div>
